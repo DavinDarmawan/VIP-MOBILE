@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_vip_glass"
+    android:fitsSystemWindows="true"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="@color/vip_surface_glass_strong"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/vip_surface_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_vip_glass"
+                            android:paddingHorizontal="14dp"
+                            android:paddingVertical="6dp"
+                            android:text="@string/auth_badge"
+                            android:textColor="@color/vip_primary"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:text="@string/auth_register_title"
+                            android:textColor="@color/vip_text_primary"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="@string/auth_register_subtitle"
+                            android:textColor="@color/vip_text_secondary"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_vip_glass"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dashboard_logo"
+                            android:textColor="@color/vip_primary"
+                            android:textSize="26sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                app:cardBackgroundColor="@color/vip_surface_glass_strong"
+                app:cardCornerRadius="32dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/vip_surface_border"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/auth_name_hint"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/vip_primary"
+                        app:hintTextColor="@color/vip_text_secondary"
+                        app:startIconDrawable="@android:drawable/ic_menu_info_details">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegisterName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:textColor="@color/vip_text_primary"
+                            android:textColorHint="@color/vip_text_muted" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/auth_phone_hint"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/vip_primary"
+                        app:hintTextColor="@color/vip_text_secondary"
+                        app:startIconDrawable="@android:drawable/ic_menu_call">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegisterPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:textColor="@color/vip_text_primary"
+                            android:textColorHint="@color/vip_text_muted" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/auth_password_hint"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/vip_primary"
+                        app:hintTextColor="@color/vip_text_secondary"
+                        app:endIconMode="password_toggle"
+                        app:startIconDrawable="@android:drawable/ic_lock_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegisterPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:textColor="@color/vip_text_primary"
+                            android:textColorHint="@color/vip_text_muted" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/auth_confirm_password_hint"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/vip_primary"
+                        app:hintTextColor="@color/vip_text_secondary"
+                        app:endIconMode="password_toggle"
+                        app:startIconDrawable="@android:drawable/ic_lock_lock">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etRegisterConfirmPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:textColor="@color/vip_text_primary"
+                            android:textColorHint="@color/vip_text_muted" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnRegisterSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:minHeight="56dp"
+                        android:text="@string/auth_register_button"
+                        android:textAllCaps="false"
+                        android:textColor="@color/vip_bg_start"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:backgroundTint="@color/vip_primary"
+                        app:cornerRadius="20dp"
+                        app:rippleColor="@color/vip_secondary" />
+
+                    <TextView
+                        android:id="@+id/tvGoLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/auth_to_login"
+                        android:textColor="@color/vip_primary"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/feature_coming_soon"
+                        android:textColor="@color/vip_text_muted"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
