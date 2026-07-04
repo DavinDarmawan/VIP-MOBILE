@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_cream"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Tombol Kembali -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_badge_charcoal"
+        android:padding="11dp"
+        android:src="@drawable/ic_back"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaksi Tabungan"
+            android:textColor="#1C1C1C"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:rotation="12"
+            android:background="@drawable/bg_badge_mustard"
+            android:padding="6dp"
+            android:src="@drawable/ic_bolt" />
+    </RelativeLayout>
+
+    <!-- Toggle Setor / Tarik pakai icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_input_field"
+        android:padding="4dp"
+        android:layout_marginBottom="18dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bg_card_charcoal">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_arrow_up"
+                app:tint="#FFFFFF"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setor"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_arrow_down"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarik"
+                android:textColor="#1C1C1C"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Card saldo -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_shadow_block"
+        android:paddingEnd="6dp"
+        android:paddingBottom="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_card_sage"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/bg_badge_mustard"
+                android:padding="7dp"
+                android:src="@drawable/ic_chart_up"
+                android:layout_marginEnd="12dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SALDO SAAT INI"
+                    android:textColor="#1C1C1C"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:letterSpacing="0.06" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 4.250.000"
+                    android:textColor="#1C1C1C"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:hint="No. Rekening Tujuan"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:hint="Nominal Transaksi"
+        android:inputType="number"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:hint="Keterangan (opsional)"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Sticker row -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:rotation="-10"
+            android:background="@drawable/bg_badge_coral"
+            android:padding="5dp"
+            android:src="@drawable/ic_star"
+            android:layout_marginEnd="8dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:rotation="12"
+            android:background="@drawable/bg_badge_mustard"
+            android:padding="5dp"
+            android:src="@drawable/ic_bolt" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_shadow_block" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="Proses Transaksi"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_card_charcoal"
+            android:elevation="0dp" />
+    </FrameLayout>
+
+</LinearLayout>

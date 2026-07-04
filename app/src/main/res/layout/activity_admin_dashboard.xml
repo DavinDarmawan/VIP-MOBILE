@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Tombol Kembali -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_badge_charcoal"
+            android:padding="11dp"
+            android:src="@drawable/ic_back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin Dashboard"
+                android:textColor="#1C1C1C"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:rotation="-10"
+                android:background="@drawable/bg_badge_sky"
+                android:padding="6dp"
+                android:src="@drawable/ic_shield_check" />
+        </RelativeLayout>
+
+        <!-- Status Keamanan -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_sage"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_badge_sky"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_shield_check"
+                    android:layout_marginEnd="14dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keamanan Sistem"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semua sistem aman terkendali"
+                        android:textColor="#1C1C1C"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_pill_dark"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AMAN"
+                        android:textColor="#FFFFFF"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Replikasi Database -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_mustard"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_badge_sky"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_chart_up"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Replikasi Database"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sinkron terakhir: 2 menit lalu"
+                    android:textColor="#1C1C1C"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_charcoal"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_bolt"
+                        app:tint="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sinkron Ulang"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Kelola Hak Akses RBAC -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_sky"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:background="@drawable/bg_badge_coral"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_shield_check"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Hak Akses Pengguna (RBAC)"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_mustard"
+                    android:padding="12dp"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/bg_badge_sky"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_wallet"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Teller"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pill_dark"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4 pengguna"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_sage">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/bg_badge_coral"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_coin"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Customer Service"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_pill_dark"
+                        android:layout_marginEnd="12dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2 pengguna"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Sticker row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="-10"
+                android:background="@drawable/bg_badge_mustard"
+                android:padding="5dp"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="12"
+                android:background="@drawable/bg_badge_coral"
+                android:padding="5dp"
+                android:src="@drawable/ic_heart_small" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_shadow_block" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="Kelola Semua Pengguna"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_card_charcoal"
+                android:elevation="0dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
