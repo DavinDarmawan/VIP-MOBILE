@@ -23,3 +23,15 @@ Notes
 - Passwords are hashed with bcrypt.
 - JWT secret is read from env (BACKEND_JWT_SECRET). Change it for any real testing.
 
+Backup & restore
+
+- A simple PowerShell helper to backup the database is provided at `docker/backup_db.ps1`.
+- Usage (from project root):
+  - `powershell -ExecutionPolicy Bypass -File .\docker\backup_db.ps1 -OutDir .\backups`
+
+Migrations behavior
+
+- On first-run the MySQL image will initialize the database using `docker/mysql/ibs_core_schema.sql`.
+- The backend's migration runner (`backend/src/migrate.js`) will detect if the database already contains tables and will mark migration files as applied to avoid re-running the initial schema. New migrations (files in `backend/migrations/*.sql`) will be executed on first backend startup when appropriate.
+
+
