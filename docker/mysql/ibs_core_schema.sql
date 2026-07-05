@@ -296,4 +296,3 @@ INSERT INTO vouchers (voucher_name, category, provider, nominal, price, stock) V
 INSERT INTO app_configs (config_key, config_value, description) VALUES
 ('primary_color', '#FF5BE7FF', 'Warna primary aplikasi (glassmorphism theme)'),
 ('app_name', 'VIP Mobile', 'Nama brand aplikasi');
-

@@ -2,7 +2,8 @@ package com.example.vip_mobile.data.model
 
 data class AuthUser(
     val name: String,
-    val phone: String
+    val phone: String,
+    val token: String? = null
 )
 
 data class LoginRequest(
@@ -25,4 +26,5 @@ sealed class AuthResult {
     data class Success(val user: AuthUser) : AuthResult()
     data class Error(val error: AuthError) : AuthResult()
 }
+
 

@@ -21,4 +21,3 @@ if (-not $rootPwd) {
 
 # Show databases inside container
 docker exec -i ibs-db mysql -uroot -p$rootPwd -e "SHOW DATABASES;"
-

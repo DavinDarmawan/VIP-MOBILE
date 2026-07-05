@@ -16,6 +16,7 @@ import com.example.vip_mobile.data.repository.AuthRepository
 import com.example.vip_mobile.data.repository.AuthRepositoryImpl
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
+import com.example.vip_mobile.data.storage.TokenStore
 import kotlinx.coroutines.launch
 
 class LoginActivity : AppCompatActivity() {
@@ -67,6 +68,10 @@ class LoginActivity : AppCompatActivity() {
             when (result) {
                 is AuthResult.Success -> {
                     showToast(getString(R.string.auth_success_login))
+                    val token = result.user.token
+                    if (token != null && token.isNotEmpty()) {
+                        TokenStore.saveToken(this@LoginActivity, token)
+                    }
                     finish()
                 }
 
@@ -94,5 +99,7 @@ class LoginActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
+
+
 
 

@@ -57,4 +57,3 @@ Jika kamu mau, saya bisa:
 - Atau buatkan skrip migrasi (Flyway/Liquibase) untuk manajemen versi skema.
 
 Beritahu pilihanmu, dan saya akan lanjutkan implementasinya.
-

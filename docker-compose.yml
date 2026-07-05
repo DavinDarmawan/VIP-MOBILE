@@ -10,11 +10,18 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    # Bind MySQL to localhost only for development to reduce remote exposure.
+    # Change to "3306:3306" if you need external access from other machines.
     ports:
-      - "3306:3306"
+      - "127.0.0.1:3306:3306"
     volumes:
       - ./docker/mysql:/docker-entrypoint-initdb.d
       - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -p$${MYSQL_ROOT_PASSWORD} || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
   backend:
     build: ./backend
     container_name: ibs-backend
@@ -22,7 +29,8 @@ services:
     env_file: .env
     environment:
       PORT: 3000
-      DB_HOST: ibs-db
+      # Use service name 'db' as the hostname inside the compose network
+      DB_HOST: db
       DB_NAME: ${MYSQL_DATABASE}
       DB_USER: ${MYSQL_USER}
       DB_PASSWORD: ${MYSQL_PASSWORD}
@@ -31,8 +39,15 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:3000/health || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
 volumes:
   db_data: {}
+
+
 
 
