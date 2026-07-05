@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "VIP-MOBILE"
+rootProject.name = "IBS-CORE"
 include(":app")
