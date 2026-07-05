@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VIP Mobile</string>
+    <string name="app_name">IBS Core.</string>
     <string name="dashboard_title">VIP Mobile</string>
     <string name="dashboard_subtitle">Aplikasi layanan perbankan digital</string>
     <string name="dashboard_greeting">Selamat datang, Nasabah VIP</string>

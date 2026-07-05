@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -50,10 +52,15 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.9.3")
     implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
 
+    // Security & Preferences
+    implementation("androidx.security:security-crypto:1.1.0-alpha06")
+
     // Room Database
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
-    
+    ksp("androidx.room:room-compiler:2.6.1")
+
+
     // SQLCipher untuk enkripsi
     implementation("net.zetetic:android-database-sqlcipher:4.5.3")
     implementation("androidx.sqlite:sqlite-ktx:2.4.0")
