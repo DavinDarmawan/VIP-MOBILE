@@ -13,3 +13,13 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Environment files (do not commit secrets)
+.env
+
+# Node modules for backend
+/backend/node_modules
+
+# Docker compose local volumes
+db_data
+
