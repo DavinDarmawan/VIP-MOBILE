@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.ibs_core"
+    namespace = "com.example.vip_mobile"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.ibs_core"
+        applicationId = "com.example.vip_mobile"
         minSdk = 31
         targetSdk = 36
         versionCode = 1

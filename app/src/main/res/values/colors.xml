@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vip_primary">#5BE7FF</color>
+    <color name="vip_bg_start">#FFF6FF</color>
+    <color name="vip_secondary">#FF5B9E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="vip_accent">#FFA500</color>
+    <color name="vip_surface_glass">#F8FFFFFF</color>
+    <color name="vip_text_primary">#1C1C1C</color>
+</resources>
+

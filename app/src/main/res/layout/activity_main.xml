@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login / Registrasi" />
+
+    <Button
+        android:id="@+id/btnBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cek Saldo" />
+
+    <Button
+        android:id="@+id/btnTransferVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer Antar Rekening VIP" />
+
+    <Button
+        android:id="@+id/btnTransferBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer ke Bank Lain" />
+
+    <Button
+        android:id="@+id/btnBills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembayaran Tagihan" />
+
+    <Button
+        android:id="@+id/btnVoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pembelian Voucher" />
+
+    <Button
+        android:id="@+id/btnVipCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIPCard" />
+
+    <Button
+        android:id="@+id/btnBranding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Branding / Konfigurasi" />
+
+</LinearLayout>
+
