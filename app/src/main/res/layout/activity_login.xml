@@ -1,120 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/loginRoot"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_vip_glass"
-    android:fitsSystemWindows="true"
-    tools:context=".LoginActivity">
+    android:background="@drawable/bg_screen_cream"
+    android:fillViewport="true">
 
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fillViewport="true"
-        android:overScrollMode="never"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="24dp">
 
+        <!-- Logo/badge besar -->
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:cardBackgroundColor="@color/vip_surface_glass_strong"
-                app:cardCornerRadius="32dp"
-                app:cardElevation="0dp"
-                app:strokeColor="@color/vip_surface_border"
-                app:strokeWidth="1dp">
+            <FrameLayout
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_shadow_block"
+                android:paddingEnd="5dp"
+                android:paddingBottom="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/bg_card_mustard">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/auth_phone_hint"
-                        app:boxBackgroundMode="outline"
-                        app:boxStrokeColor="@color/vip_primary"
-                        app:hintTextColor="@color/vip_text_secondary"
-                        app:startIconDrawable="@android:drawable/ic_menu_call">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etLoginPhone"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="phone"
-                            android:textColor="@color/vip_text_primary"
-                            android:textColorHint="@color/vip_text_muted" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
-                        android:hint="@string/auth_password_hint"
-                        app:boxBackgroundMode="outline"
-                        app:boxStrokeColor="@color/vip_primary"
-                        app:hintTextColor="@color/vip_text_secondary"
-                        app:endIconMode="password_toggle"
-                        app:startIconDrawable="@android:drawable/ic_lock_lock">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etLoginPassword"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textPassword"
-                            android:textColor="@color/vip_text_primary"
-                            android:textColorHint="@color/vip_text_muted" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnLoginSubmit"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="18dp"
-                        android:minHeight="56dp"
-                        android:text="@string/auth_login_button"
-                        android:textAllCaps="false"
-                        android:textColor="@color/vip_bg_start"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        app:backgroundTint="@color/vip_primary"
-                        app:cornerRadius="20dp"
-                        app:rippleColor="@color/vip_secondary" />
-
-                    <TextView
-                        android:id="@+id/tvGoRegister"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/auth_to_register"
-                        android:textColor="@color/vip_primary"
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:text="@string/auth_note"
-                        android:textColor="@color/vip_text_muted"
-                        android:textSize="12sp" />
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:src="@drawable/ic_shield_check" />
                 </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
-        </LinearLayout>
-    </ScrollView>
+            </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IBS Core"
+                android:textColor="#1C1C1C"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Core Banking System"
+                android:textColor="#8A8A8A"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="32dp" />
+        </LinearLayout>
+
+        <!-- Card form login -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_sky"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/bg_badge_mustard"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_user"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MASUK AKUN"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:letterSpacing="0.08" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp"
+                    android:layout_marginBottom="12dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_user"
+                        android:layout_marginEnd="10dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Username / No. Rekening"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="14dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_lock"
+                        android:layout_marginEnd="10dp" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Lupa Password?"
+            android:textColor="#8A8A8A"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Tombol Login -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_shadow_block" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="Masuk"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_card_charcoal"
+                android:elevation="0dp" />
+        </FrameLayout>
+
+        <!-- Sticker row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="-10"
+                android:background="@drawable/bg_badge_coral"
+                android:padding="5dp"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="12"
+                android:background="@drawable/bg_badge_sage"
+                android:padding="5dp"
+                android:src="@drawable/ic_heart_small" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

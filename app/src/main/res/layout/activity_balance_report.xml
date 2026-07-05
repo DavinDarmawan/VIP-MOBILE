@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Tombol Kembali -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/bg_badge_charcoal"
+            android:padding="11dp"
+            android:src="@drawable/ic_back"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laporan Neraca"
+                android:textColor="#1C1C1C"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:rotation="-10"
+                android:background="@drawable/bg_badge_sky"
+                android:padding="6dp"
+                android:src="@drawable/ic_chart_up" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan posisi keuangan periode berjalan"
+            android:textColor="#8A8A8A"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Total Aset -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_sage"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_badge_mustard"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_arrow_up"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL ASET"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:letterSpacing="0.06" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 12.500.000.000"
+                        android:textColor="#1C1C1C"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Total Kewajiban -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_coral"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_badge_mustard"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL KEWAJIBAN"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:letterSpacing="0.06" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 3.100.000.000"
+                        android:textColor="#1C1C1C"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Ekuitas -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_shadow_block"
+            android:paddingEnd="6dp"
+            android:paddingBottom="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_card_sky"
+                android:padding="18dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_badge_coral"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_coin"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EKUITAS"
+                        android:textColor="#1C1C1C"
+                        android:textStyle="bold"
+                        android:textSize="11sp"
+                        android:letterSpacing="0.06" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 9.400.000.000"
+                        android:textColor="#1C1C1C"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Sticker row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="12"
+                android:background="@drawable/bg_badge_mustard"
+                android:padding="5dp"
+                android:src="@drawable/ic_star"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="-10"
+                android:background="@drawable/bg_badge_sage"
+                android:padding="5dp"
+                android:src="@drawable/ic_heart_small" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_shadow_block" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="Kirim ke Modul Accounting"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_card_charcoal"
+                android:elevation="0dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
