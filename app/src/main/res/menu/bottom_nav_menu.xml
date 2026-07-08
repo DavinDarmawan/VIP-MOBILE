@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_user"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_cs"
+        android:icon="@drawable/ic_wallet"
+        android:title="CIF" />
+    <item
+        android:id="@+id/nav_teller"
+        android:icon="@drawable/ic_coin"
+        android:title="Transaksi" />
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/ic_document"
+        android:title="Riwayat" />
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/ic_chart_up"
+        android:title="Laporan" />
+</menu>
