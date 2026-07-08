@@ -24,7 +24,7 @@ Berikut adalah anggota tim yang berkontribusi dalam pengembangan proyek ini:
 
 demonstrasi aplikasi dan penjelasan detail mengenai arsitektur serta kode proyek melalui tautan video di bawah ini:
 
-👉 **[Tonton Video Penjelasan di YouTube](https://link-video-kamu-disini.com)**
+👉 **[Tonton Video Penjelasan di YouTube]([https://link-video-kamu-disini.com](https://drive.google.com/file/d/174DYELWiIHW-DIt2smx1wPwuZdWwnuSn/view?usp=sharing))**
 
 ---
 
@@ -33,12 +33,14 @@ demonstrasi aplikasi dan penjelasan detail mengenai arsitektur serta kode proyek
 Berikut adalah beberapa tampilan antarmuka dari aplikasi yang telah dikembangkan:
 
 ### 1. Halaman Utama / Dashboard
-![Halaman Utama](https://via.placeholder.com/800x450.png?text=Screenshot+Halaman+Utama)
-*Deskripsi singkat mengenai tangkapan layar pertama.*
+![Halaman Utama](<img width="722" height="1600" alt="image" src="https://github.com/user-attachments/assets/0ec5aba5-b19f-44c5-af55-0e3e195fca73" />
+)
 
-### 2. Halaman Fitur Utama
-![Halaman Fitur](https://via.placeholder.com/800x450.png?text=Screenshot+Fitur+Utama)
-*Deskripsi singkat mengenai tangkapan layar kedua.*
+
+### 2. Halaman Fitur Buka rekening
+![Halaman Fitur](<img width="722" height="1600" alt="image" src="https://github.com/user-attachments/assets/8a096b2c-6882-4be2-9555-be6818cb65eb" />
+)
+
 
 ---
 
@@ -49,7 +51,6 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di lingkungan lo
 ### Prasyarat (Prerequisites)
 Pastikan kamu sudah menginstal perangkat lunak berikut:
 * [Git](https://git-scm.com/)
-* [Node.js / Java JDK / PHP / Python]* *(Sesuaikan dengan teknologi proyekmu)*
 
 ### Langkah-Langkah
 
