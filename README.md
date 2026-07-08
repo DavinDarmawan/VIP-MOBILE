@@ -4,7 +4,7 @@
 [![Status Proyek](https://img.shields.io/badge/Status-Completed%20%2F%20In%20Development-green)](https://github.com/)
 
 ### Deskripsi Singkat
-Tuliskan deskripsi singkat mengenai proyekmu di sini. Jelaskan latar belakang masalah, solusi yang ditawarkan oleh aplikasi ini, serta fitur-fitur utama yang diimplementasikan secara ringkas dan jelas.
+**IBS Core** merupakan sistem inti (core application) yang dirancang untuk mengelola proses bisnis utama, integrasi data, serta menyediakan layanan backend yang andal untuk mendukung operasional sistem IBS secara menyeluruh. Aplikasi ini berfokus pada efisiensi pemrosesan data, keamanan, dan skalabilitas sistem backend.
 
 ---
 
@@ -55,4 +55,4 @@ Pastikan kamu sudah menginstal perangkat lunak berikut:
 
 1. **Clone Repositori**
    ```bash
-   git clone [https://github.com/username/nama-repo-kamu.git](https://github.com/username/nama-repo-kamu.git)
+   git clone [https://github.com/DavinDarmawan/IBS-CORE.git](https://github.com/DavinDarmawan/IBS-CORE.git)
