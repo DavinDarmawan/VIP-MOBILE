@@ -32,12 +32,12 @@ demonstrasi aplikasi dan penjelasan detail mengenai arsitektur serta kode proyek
 Berikut adalah beberapa tampilan antarmuka dari aplikasi yang telah dikembangkan:
 
 ### 1. Halaman Utama / Dashboard
-![Halaman Utama]<img width="222" height="1600" alt="WhatsApp Image 2026-07-08 at 22 27 20" src="https://github.com/user-attachments/assets/c03e1eb8-0050-433a-bf1d-71eda1948db8" />
+![Halaman Utama]<img width="222" alt="WhatsApp Image 2026-07-08 at 22 27 20" src="https://github.com/user-attachments/assets/c03e1eb8-0050-433a-bf1d-71eda1948db8" />
 
 
 
 ### 2. Halaman Fitur Buka rekening
-![Halaman Fitur]<img width="722" height="1600" alt="WhatsApp Image 2026-07-08 at 22 27 33" src="https://github.com/user-attachments/assets/f620fed9-ea0f-4e03-99ac-3dd74137e155" />
+![Halaman Fitur]<img width="222" alt="WhatsApp Image 2026-07-08 at 22 27 33" src="https://github.com/user-attachments/assets/f620fed9-ea0f-4e03-99ac-3dd74137e155" />
 
 ---
 
