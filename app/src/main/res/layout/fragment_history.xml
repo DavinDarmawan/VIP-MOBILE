@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_cream">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rekening Koran"
+                    android:textColor="#1C1C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="12"
+                    android:background="@drawable/bg_badge_mustard"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_chart_up" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="18dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:hint="Dari Tanggal"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingStart="14dp"
+                    android:layout_marginEnd="8dp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:hint="Sampai Tanggal"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingStart="14dp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Unduh Laporan (PDF)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_card_charcoal" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
