@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:paddingBottom="6dp"
+    android:paddingEnd="6dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_shadow_block" />
+
+    <LinearLayout
+        android:id="@+id/containerProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@drawable/bg_card_white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivProductIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_coin"
+            android:background="@drawable/bg_badge_mustard"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP Silver"
+            android:textColor="#1C1C1C"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvProductDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min. Rp 50.000"
+            android:textColor="#8A8A8A"
+            android:textSize="11sp" />
+    </LinearLayout>
+</FrameLayout>

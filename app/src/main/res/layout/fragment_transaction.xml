@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen_cream">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaksi Tabungan"
+                    android:textColor="#1C1C1C"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:rotation="12"
+                    android:background="@drawable/bg_badge_mustard"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_bolt" />
+            </RelativeLayout>
+
+            <!-- Card saldo -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/bg_shadow_block"
+                android:paddingEnd="6dp"
+                android:paddingBottom="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_sage"
+                    android:padding="18dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/bg_badge_mustard"
+                        android:padding="7dp"
+                        android:src="@drawable/ic_chart_up"
+                        android:layout_marginEnd="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SALDO SAAT INI"
+                            android:textColor="#1C1C1C"
+                            android:textStyle="bold"
+                            android:textSize="11sp"
+                            android:letterSpacing="0.06" />
+
+                        <TextView
+                            android:id="@+id/tvCurrentBalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp 0"
+                            android:textColor="#1C1C1C"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/etDestAccount"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="No. Rekening Tujuan"
+                android:background="@drawable/bg_input_field"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Nominal Transaksi"
+                android:inputType="number"
+                android:background="@drawable/bg_input_field"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etTransferNote"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Keterangan (opsional)"
+                android:background="@drawable/bg_input_field"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_shadow_block" />
+
+                <Button
+                    android:id="@+id/btnSubmitTransfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Proses Transaksi"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_card_charcoal"
+                    android:elevation="0dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
