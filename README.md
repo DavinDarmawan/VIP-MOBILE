@@ -24,8 +24,7 @@ Berikut adalah anggota tim yang berkontribusi dalam pengembangan proyek ini:
 
 demonstrasi aplikasi dan penjelasan detail mengenai arsitektur serta kode proyek melalui tautan video di bawah ini:
 
-👉 **[Tonton Video Penjelasan di Google Drive](https://drive.google.com/file/d/174DYELWiIHW-DIt2smx1wPwuZdWwnuSn/view?usp=sharing)**
-
+👉 **[Tonton Video Penjelasan di Google Drive](https://drive.google.com/drive/folders/1S7V5AwjCrcRAmFe45XOT7iLA1ja2sQlb)**
 ---
 
 ## 📸 Screenshot Aplikasi
